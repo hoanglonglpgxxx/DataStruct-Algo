@@ -6,5 +6,13 @@
 
 * Worst case
 * Remove constants : ex O(101 + 5n + 1) -> O(n + 1) -> O(n), O(n/2) -> O(n)
-* Different terms for inputs
-* Drop Non Dominants
+* Different terms for inputs //nếu các inputs khác nhau, dùng terms khác để phân biệt, do không biết độ dài của chúng
+* Drop Non Dominants: chỉ giữ term quan trọng nhất - dominant, những cái khác có thể bỏ : ex: O(N + n^2) -> O(N^2)
+
+- O(n!) : deepest O, O factorial of n: adding a loop for every element
+  //? What causes Space Complexity
+
+1. Variables
+2. Data Structures
+3. Func call
+4. Allocations
