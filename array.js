@@ -50,7 +50,7 @@ class Wiz extends Player {
 const wiz1 = new Wiz('test1', 'test2');
 console.log(wiz1.test()); */
 
-class MyArray {
+/* class MyArray {
     constructor() {
         this.length = 0;
         this.data = {};
@@ -85,4 +85,46 @@ class MyArray {
 
 const newArr = new MyArray();
 newArr.push('hi');
-console.log(newArr);
+console.log(newArr); */
+
+//1. reverse string
+
+function reverseString(str) {
+    let b = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        b += str[i];
+    }
+    console.log(b);
+}
+
+// hoặc dùng method reverse của JS
+const reverse3 = str => [...str].reverse().join('');
+
+reverseString('Hi My name is Long');
+console.log('solution2', reverse3('Hi My name is Long'));
+
+
+//2. merge 2 sorted array
+//[0,3,4,31],[4,6,30]
+const mergeSortedArrs = (arr1, arr2) => {
+    if (!arr1.length) {
+        return arr2;
+    }
+    if (!arr2.length) {
+        return arr1;
+    }
+    const arr = arr1.concat(arr2);
+    for (let i = 0; i < arr.length - 1; i++) {
+        let temp = arr[i];
+        if (arr[i] > arr[i + 1]) {
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+    }
+    console.log(arr);
+};
+
+/*
+? ADVANTAGES: FAST LOOKUP, FAST PUSH/POP, ORDERED
+? DISADVANTAGES: SLOW INSERTS, SLOW DELETES, FIXED SIZE(IF USING STATIC ARR)
+ */
