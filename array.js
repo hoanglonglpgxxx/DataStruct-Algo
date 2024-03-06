@@ -1,6 +1,7 @@
 //-----------------------------------ARRAY
 /*1. array 
-lokpup O(1)
+search O(n)
+lookup O(1)
 push O(1)
 insert O(n)
 delete O(n)

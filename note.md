@@ -16,3 +16,6 @@
 2. Data Structures
 3. Func call
 4. Allocations
+
+- Hash collision: xung đột băm
+- idempotent
