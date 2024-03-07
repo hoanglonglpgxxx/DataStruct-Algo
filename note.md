@@ -19,3 +19,5 @@
 
 - Hash collision: xung đột băm
 - idempotent
+
+//Khóa 28Tech BỎ: B1-B13, B12-B13(JS Advanced but bullshit vcl???)
