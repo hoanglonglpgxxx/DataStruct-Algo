@@ -1,7 +1,7 @@
 /**
  * has 2 nodes: head & tail
  * use pointer
- * không có prebuild linkedList
+ * không có prebuild linkedList in JS
  * prepend O(1)
  * append O(1)
  * lookup O(n)
@@ -96,6 +96,10 @@ class LinkedList {
 
     remove(index) {
         const leader = this.traverseToIndex(index - 1);
+        const removeNode = leader.next;
+        leader.next = removeNode.next;
+        this.length--;
+        return this.printList();
     }
 }
 
@@ -104,3 +108,4 @@ myLinkedList2.append(5);
 myLinkedList2.append(16);
 myLinkedList2.prepend(1);
 myLinkedList2.insert(2, 98);
+myLinkedList2.remove(1);
